@@ -51,7 +51,7 @@ var InfiniteTicker = new Class({
 		if(cs){
 			els = this.element.getElements(cs);
 		} else if (this.options.direction == 'left' || this.options.direction == 'right'){
-			els = this.element.getElements(':first-child > *');
+			els = this.element.getFirst().getChildren();
 		} else {
 			els = this.element.getChildren();
 		}
