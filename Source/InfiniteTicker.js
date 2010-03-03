@@ -47,7 +47,7 @@ var InfiniteTicker = new Class({
 	},
 		
 	cacheElements: function(){
-		var cs = this.options.childSelector;
+		var cs = this.options.childSelector, els;
 		if(cs){
 			els = this.element.getElements(cs);
 		} else if (this.options.direction == 'left' || this.options.direction == 'right'){
